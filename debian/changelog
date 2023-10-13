@@ -1,8 +1,8 @@
-haskell-scientific (0.3.6.2-deepin1) unstable; urgency=medium
+haskell-scientific (0.3.7.0-1) unstable; urgency=medium
 
-  * Rebuild
+  * New upstream release
 
- -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:40:57 +0800
+ -- Scott Talbert <swt@techie.net>  Wed, 15 Jun 2022 19:49:32 -0400
 
 haskell-scientific (0.3.6.2-4) unstable; urgency=medium
 

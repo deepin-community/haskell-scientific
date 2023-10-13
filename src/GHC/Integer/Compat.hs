@@ -1,6 +1,13 @@
 {-# LANGUAGE CPP #-}
+{-# LANGUAGE Trustworthy #-}
 
-module GHC.Integer.Compat (divInteger) where
+module GHC.Integer.Compat (divInteger, quotRemInteger, quotInteger) where
+
+import GHC.Integer        (quotRemInteger, quotInteger)
+
+#if MIN_VERSION_base(4,15,0)
+import GHC.Integer (divInteger)
+#else
 
 #ifdef MIN_VERSION_integer_simple
 
@@ -20,4 +27,5 @@ divInteger :: Integer -> Integer -> Integer
 divInteger = div
 #endif
 
+#endif
 #endif
